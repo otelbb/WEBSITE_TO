@@ -59,7 +59,6 @@ const MenuSection = () => {
                     }}
                   >
                     <CardContent className="p-0">
-                      {/* Image Placeholder - ZONE OÙ AJOUTER VOS IMAGES */}
                       <div className="relative h-48 bg-gradient-to-br from-red-900/20 to-neutral-900/50 overflow-hidden">
                         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2 p-4">
                           <ImageIcon className="h-10 w-10 text-white/30" />
@@ -79,7 +78,6 @@ const MenuSection = () => {
                         )}
                       </div>
 
-                      {/* Product Info */}
                       <div className="p-5">
                         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-red-500 transition-colors">
                           {item.name}
@@ -104,23 +102,6 @@ const MenuSection = () => {
             </TabsContent>
           ))}
         </Tabs>
-
-        {/* Instructions pour modifier le menu */}
-        <div className="mt-12 max-w-3xl mx-auto">
-          <Card className="bg-red-600/10 border border-red-600/30">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-white mb-3 flex items-center">
-                <ImageIcon className="h-5 w-5 mr-2 text-red-500" />
-                Comment modifier le menu ?
-              </h3>
-              <div className="space-y-2 text-sm text-white/80">
-                <p>📝 <strong>Option 1 :</strong> Ouvrez le fichier <code className="bg-black/30 px-2 py-1 rounded text-red-400">/app/frontend/src/data/mock.js</code></p>
-                <p>📷 <strong>Option 2 :</strong> Envoyez-moi directement vos photos et prix, je les intègre pour vous !</p>
-                <p>🎯 <strong>Chaque produit a un ID unique</strong> pour faciliter les modifications</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
